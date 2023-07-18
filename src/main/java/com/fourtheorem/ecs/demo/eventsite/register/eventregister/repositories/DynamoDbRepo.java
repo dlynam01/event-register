@@ -12,9 +12,6 @@ import java.util.Set;
 @Repository
 public class DynamoDbRepo {
 
-    //@Autowired
-    //AmazonDynamoDB dynamoDB;
-
     DynamoDbClient ddb = DynamoDbClient.builder().build();
 
     private static String TABLE_NAME = "Eventsite";

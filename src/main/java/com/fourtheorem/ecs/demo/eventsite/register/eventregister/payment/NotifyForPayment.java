@@ -17,8 +17,6 @@ public class NotifyForPayment {
     String queueUrl;
 
     SqsClient sqsClient = SqsClient.builder()
-            //.region(Region.US_EAST_1)
-            //.credentialsProvider(EnvironmentVariableCredentialsProvider.create())
             .build();
 
     public String processPaymentCommand(int memberId, String eventId) {
